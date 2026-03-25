@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - FundIt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">Fund<span>It</span></a>
+    <nav id="navbar"></nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <div id="alertBox"></div>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="Choose a password" minlength="4">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <div class="form-footer">
+      Already have an account? <a href="login.html">Log In</a>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>

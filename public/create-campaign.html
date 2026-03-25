@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start a Campaign - FundIt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">Fund<span>It</span></a>
+    <nav id="navbar"></nav>
+  </header>
+
+  <div class="form-container" style="max-width:600px;">
+    <h2>Start a New Campaign</h2>
+    <div id="alertBox"></div>
+    <form id="campaignForm">
+      <div class="form-group">
+        <label for="title">Campaign Title</label>
+        <input type="text" id="title" required placeholder="Give your campaign a name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" required placeholder="Tell people about your project..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select a category</option>
+          <option value="technology">Technology</option>
+          <option value="music">Music</option>
+          <option value="community">Community</option>
+          <option value="film">Film</option>
+          <option value="art">Art</option>
+          <option value="education">Education</option>
+          <option value="health">Health</option>
+          <option value="gaming">Gaming</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="goal">Funding Goal ($)</label>
+        <input type="number" id="goal" required min="1" placeholder="5000">
+      </div>
+      <div class="form-group">
+        <label for="deadline">Deadline</label>
+        <input type="text" id="deadline" required placeholder="dd-mm-yyyy">
+      </div>
+      <div class="form-group">
+        <label for="image">Campaign Image (optional)</label>
+        <input type="file" id="image" accept="image/*">
+      </div>
+      <button type="submit" class="btn btn-primary">Create Campaign</button>
+    </form>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/create-campaign.js"></script>
+</body>
+
+</html>

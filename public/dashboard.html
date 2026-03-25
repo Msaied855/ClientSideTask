@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard - FundIt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">Fund<span>It</span></a>
+    <nav id="navbar"></nav>
+  </header>
+
+  <div class="dashboard">
+    <div class="dashboard-header">
+      <h2 id="welcomeMsg">My Dashboard</h2>
+      <a href="/create-campaign.html" class="btn btn-primary btn-sm">+ New Campaign</a>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <!-- My Campaigns -->
+    <div class="table-wrapper">
+      <h3>My Campaigns</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Goal</th>
+            <th>Raised</th>
+            <th>Status</th>
+            <th>Deadline</th>
+          </tr>
+        </thead>
+        <tbody id="campaignsTable">
+          <tr>
+            <td colspan="5" style="text-align:center;color:#999;">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- My Pledges -->
+    <div class="table-wrapper">
+      <h3>My Pledges</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Campaign</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="pledgesTable">
+          <tr>
+            <td colspan="2" style="text-align:center;color:#999;">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 FundIt. All rights reserved.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

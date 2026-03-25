@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@crowdfund.com",
+      "password": "admin123",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "password": "jane123",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "name": "Ahmed Ali",
+      "email": "ahmed@example.com",
+      "password": "ahmed123",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "4",
+      "name": "Sara Wilson",
+      "email": "sara@example.com",
+      "password": "sara123",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "4cc3",
+      "name": "mohamed saied",
+      "email": "msaied@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "475a",
+      "name": "sheref ashraf",
+      "email": "sheref@gmail.com",
+      "password": "mohamedsaied",
+      "role": "user",
+      "isActive": true
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "1",
+      "title": "Smart Watch for Fitness",
+      "description": "A next-gen fitness smartwatch with health monitoring features including heart rate, sleep tracking, and GPS navigation. Help us bring affordable health tech to everyone.",
+      "category": "technology",
+      "goal": 5000,
+      "raised": 1250,
+      "deadline": "31-12-2026",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "",
+      "isRejected": false
+    },
+    {
+      "id": "2",
+      "title": "Indie Music Album",
+      "description": "We are recording our debut album and need support for studio time, mixing, and mastering. Join us on this musical journey and get exclusive early access.",
+      "category": "music",
+      "goal": 3000,
+      "raised": 800,
+      "deadline": "15-08-2026",
+      "creatorId": 3,
+      "isApproved": false,
+      "image": "",
+      "isRejected": true
+    },
+    {
+      "id": "3",
+      "title": "Community Garden Project",
+      "description": "Transforming an empty lot into a thriving community garden. Funds will go towards soil, seeds, tools, and irrigation setup for the neighborhood.",
+      "category": "community",
+      "goal": 2000,
+      "raised": 550,
+      "deadline": "01-06-2026",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "",
+      "isRejected": false
+    },
+    {
+      "id": "4",
+      "title": "Short Film Production",
+      "description": "An independent short film exploring themes of identity and belonging. Your pledge helps cover equipment rental, actors, and post-production costs.",
+      "category": "film",
+      "goal": 8000,
+      "raised": 0,
+      "deadline": "20-10-2026",
+      "creatorId": 2,
+      "isApproved": false,
+      "image": "",
+      "isRejected": true
+    },
+    {
+      "id": "8014",
+      "title": "مساعدة الفلاحين",
+      "description": "مساعدة الفلاحين جامد",
+      "category": "health",
+      "goal": 5000,
+      "raised": 700,
+      "deadline": "10-10-2000",
+      "creatorId": "4cc3",
+      "isApproved": true,
+      "image": "",
+      "isRejected": false
+    }
+  ],
+  "pledges": [
+    {
+      "id": "1",
+      "campaignId": 1,
+      "userId": 3,
+      "amount": 500
+    },
+    {
+      "id": "2",
+      "campaignId": 1,
+      "userId": 4,
+      "amount": 750
+    },
+    {
+      "id": "3",
+      "campaignId": 2,
+      "userId": 2,
+      "amount": 300
+    },
+    {
+      "id": "4",
+      "campaignId": 2,
+      "userId": 4,
+      "amount": 500
+    },
+    {
+      "id": "5",
+      "campaignId": 3,
+      "userId": 2,
+      "amount": 200
+    },
+    {
+      "id": "6",
+      "campaignId": 3,
+      "userId": 3,
+      "amount": 250
+    },
+    {
+      "id": "4715",
+      "campaignId": "3",
+      "userId": "4cc3",
+      "amount": 100
+    },
+    {
+      "id": "d0da",
+      "campaignId": "8014",
+      "userId": "2",
+      "amount": 600
+    },
+    {
+      "id": "9a59",
+      "campaignId": "8014",
+      "userId": "2",
+      "amount": 100
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

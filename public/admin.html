@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - FundIt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">Fund<span>It</span></a>
+    <nav id="navbar"></nav>
+  </header>
+
+  <div class="dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('users')">Users</button>
+      <button class="tab" onclick="switchTab('campaigns')">Campaigns</button>
+      <button class="tab" onclick="switchTab('pledges')">Pledges</button>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <!-- Users Tab -->
+    <div id="usersTab" class="tab-content">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="usersTable">
+            <tr>
+              <td colspan="6" style="text-align:center;color:#999;">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Campaigns Tab -->
+    <div id="campaignsTab" class="tab-content" style="display:none;">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Creator</th>
+              <th>Goal</th>
+              <th>Raised</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="campaignsTableAdmin">
+            <tr>
+              <td colspan="7" style="text-align:center;color:#999;">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Pledges Tab -->
+    <div id="pledgesTab" class="tab-content" style="display:none;">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Campaign ID</th>
+              <th>User ID</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="pledgesTableAdmin">
+            <tr>
+              <td colspan="4" style="text-align:center;color:#999;">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 FundIt. All rights reserved.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>
