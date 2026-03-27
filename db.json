@@ -82,7 +82,7 @@
       "description": "Transforming an empty lot into a thriving community garden. Funds will go towards soil, seeds, tools, and irrigation setup for the neighborhood.",
       "category": "community",
       "goal": 2000,
-      "raised": 550,
+      "raised": 600,
       "deadline": "01-06-2026",
       "creatorId": 4,
       "isApproved": true,
@@ -108,12 +108,37 @@
       "description": "مساعدة الفلاحين جامد",
       "category": "health",
       "goal": 5000,
-      "raised": 700,
+      "raised": 750,
       "deadline": "10-10-2000",
       "creatorId": "4cc3",
       "isApproved": true,
       "image": "",
       "isRejected": false
+    },
+    {
+      "id": "81ec",
+      "title": "testing",
+      "description": "im just testing the code",
+      "category": "technology",
+      "goal": 5000,
+      "raised": 57,
+      "deadline": "08-04-2026",
+      "creatorId": "4cc3",
+      "isApproved": true,
+      "image": "",
+      "isRejected": false
+    },
+    {
+      "id": "b3c2",
+      "title": "nothing",
+      "description": "mobopsdjb",
+      "category": "art",
+      "goal": 5197,
+      "raised": 0,
+      "deadline": "08-04-2026",
+      "creatorId": "4cc3",
+      "isApproved": false,
+      "image": ""
     }
   ],
   "pledges": [
@@ -170,6 +195,24 @@
       "campaignId": "8014",
       "userId": "2",
       "amount": 100
+    },
+    {
+      "id": "947a",
+      "campaignId": "8014",
+      "userId": "4cc3",
+      "amount": 50
+    },
+    {
+      "id": "72e5",
+      "campaignId": "3",
+      "userId": "4cc3",
+      "amount": 50
+    },
+    {
+      "id": "fe0d",
+      "campaignId": "81ec",
+      "userId": "2",
+      "amount": 57
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

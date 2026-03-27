@@ -22,6 +22,20 @@ form.addEventListener('submit', async function (e) {
     showAlert(alertBox, 'Deadline must be in dd-mm-yyyy format.', 'error');
     return;
   }
+  // convert dd-mm-yyyy to Date
+const [day, month, year] = deadline.split('-').map(Number);
+const deadlineDate = new Date(year, month - 1, day);
+
+// today's date (without time)
+const today = new Date();
+today.setHours(0,0,0,0);
+
+// check if deadline is in the past
+if (deadlineDate < today) {
+  showAlert(alertBox, 'InValid Deadline', 'error');
+  return;
+}
+  
 
   let imageBase64 = '';
 
