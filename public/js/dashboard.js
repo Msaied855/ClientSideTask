@@ -42,26 +42,34 @@ async function loadMyCampaigns() {
 
 async function loadMyPledges() {
   try {
-    const res = await fetch(`${API}/pledges?userId=${user.id}`);
+    const res = await fetch(`${API}/pledges`);
     const pledges = await res.json();
 
-    if (pledges.length === 0) {
-      pledgesTable.innerHTML = '<tr><td colspan="2" style="text-align:center;color:#999;">You haven\'t backed any campaigns yet.</td></tr>';
+    // filter pledges manually to avoid string/number problems
+    const myPledges = pledges.filter(p => String(p.userId) === String(user.id));
+
+    if (myPledges.length === 0) {
+      pledgesTable.innerHTML =
+        '<tr><td colspan="2" style="text-align:center;color:#999;">You haven\'t backed any campaigns yet.</td></tr>';
       return;
     }
 
-    // fetch campaign titles for each pledge
-    const rows = await Promise.all(pledges.map(async p => {
+    const rows = await Promise.all(myPledges.map(async p => {
       let title = `Campaign #${p.campaignId}`;
+
       try {
         const cRes = await fetch(`${API}/campaigns/${p.campaignId}`);
         const c = await cRes.json();
         title = c.title;
-      } catch (e) {}
+      } catch (e) { }
 
       return `
         <tr>
-          <td><a href="/campaign.html?id=${p.campaignId}" style="color:#2ecc71;font-weight:500;">${title}</a></td>
+          <td>
+            <a href="/campaign.html?id=${p.campaignId}" style="color:#2ecc71;font-weight:500;">
+              ${title}
+            </a>
+          </td>
           <td>${formatMoney(p.amount)}</td>
         </tr>
       `;
@@ -69,7 +77,8 @@ async function loadMyPledges() {
 
     pledgesTable.innerHTML = rows.join('');
   } catch (err) {
-    pledgesTable.innerHTML = '<tr><td colspan="2" style="text-align:center;color:#e74c3c;">Failed to load pledges.</td></tr>';
+    pledgesTable.innerHTML =
+      '<tr><td colspan="2" style="text-align:center;color:#e74c3c;">Failed to load pledges.</td></tr>';
   }
 }
 

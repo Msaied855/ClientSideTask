@@ -121,7 +121,7 @@
       "description": "im just testing the code",
       "category": "technology",
       "goal": 5000,
-      "raised": 57,
+      "raised": 207,
       "deadline": "08-04-2026",
       "creatorId": "4cc3",
       "isApproved": true,
@@ -213,6 +213,24 @@
       "campaignId": "81ec",
       "userId": "2",
       "amount": 57
+    },
+    {
+      "id": "fbf3",
+      "campaignId": "81ec",
+      "userId": "2",
+      "amount": 50
+    },
+    {
+      "id": "f45b",
+      "campaignId": "81ec",
+      "userId": "2",
+      "amount": 50
+    },
+    {
+      "id": "2c7c",
+      "campaignId": "81ec",
+      "userId": "2",
+      "amount": 50
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

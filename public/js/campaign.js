@@ -129,8 +129,8 @@ async function submitPledge() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        campaignId: campaign.id,
-        userId: user.id,
+        campaignId: String(campaign.id),
+        userId: String(user.id),
         amount: amount
       })
     });
