@@ -58,7 +58,7 @@
       "goal": 5000,
       "raised": 1250,
       "deadline": "31-12-2026",
-      "creatorId": 2,
+      "creatorId": "2",
       "isApproved": true,
       "image": "",
       "isRejected": false
@@ -71,7 +71,7 @@
       "goal": 3000,
       "raised": 800,
       "deadline": "15-08-2026",
-      "creatorId": 3,
+      "creatorId": "3",
       "isApproved": false,
       "image": "",
       "isRejected": true
@@ -84,7 +84,7 @@
       "goal": 2000,
       "raised": 600,
       "deadline": "01-06-2026",
-      "creatorId": 4,
+      "creatorId": "4",
       "isApproved": true,
       "image": "",
       "isRejected": false
@@ -97,7 +97,7 @@
       "goal": 8000,
       "raised": 0,
       "deadline": "20-10-2026",
-      "creatorId": 2,
+      "creatorId": "2",
       "isApproved": false,
       "image": "",
       "isRejected": true
@@ -137,45 +137,46 @@
       "raised": 0,
       "deadline": "08-04-2026",
       "creatorId": "4cc3",
-      "isApproved": false,
-      "image": ""
+      "isApproved": true,
+      "image": "",
+      "isRejected": false
     }
   ],
   "pledges": [
     {
       "id": "1",
-      "campaignId": 1,
-      "userId": 3,
+      "campaignId": "1",
+      "userId": "3",
       "amount": 500
     },
     {
       "id": "2",
-      "campaignId": 1,
-      "userId": 4,
+      "campaignId": "1",
+      "userId": "4",
       "amount": 750
     },
     {
       "id": "3",
-      "campaignId": 2,
-      "userId": 2,
+      "campaignId": "2",
+      "userId": "2",
       "amount": 300
     },
     {
       "id": "4",
-      "campaignId": 2,
-      "userId": 4,
+      "campaignId": "2",
+      "userId": "4",
       "amount": 500
     },
     {
       "id": "5",
-      "campaignId": 3,
-      "userId": 2,
+      "campaignId": "3",
+      "userId": "2",
       "amount": 200
     },
     {
       "id": "6",
-      "campaignId": 3,
-      "userId": 3,
+      "campaignId": "3",
+      "userId": "3",
       "amount": 250
     },
     {
